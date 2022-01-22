@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Email extract </title>
+</head>
+<body style="background-color:black;">
+<br>
+<div class="container" style="color:green;font-family:arial">
+    <center><div class="header-part" style="font-size:50px;color:#da10f2">Extract Email IDs from any website</div><br>
+    <form method="get" name="extract-email" action="websiteUrl">
+        <input type="url" style="border:none;outline:none;border-radius:10px;width:60%;height:50px;font-size:25px;" name="website-url" placeholder="Enter Website URL here..." class="website-url" required />
+        <br><br><button type="submit" style="font-size:20px;color:white;background-color:#3a3ae4;width:30%;height:50px;border-radius:10px;border:none;" name="submit-website-url" value="submit-website-url" class="submit-button">START EXTRACTING</button>
+    </form>
+    <br><br>
+        <h1>{{error}}</h1>
+    <table  style="text-align:center;width:100%;">
+    {% for data in plainText %}
+        <tr>
+            <td>
+                {{data}}
+                <br>
+                <hr style="width:50%;text-align:center">
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+    </center>
+
+</div>
+
+
+
+
+</body>
+</html>
