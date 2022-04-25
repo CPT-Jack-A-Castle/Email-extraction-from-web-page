@@ -5,5 +5,5 @@ This is a Django project for extracting Email ids from web pages. User have to o
 
 # How to implement in your Django project?
 
--: Update or append  **URLS.py views.py** in your django project. Change index.html file in your django project which is present the **templates** folder or if not present then add this index.html file in the folder.  
+-: Update or append  **URLS.py views.py** in your django project. Change index.html file in your django project which is present in the **templates** folder or if it is not present then add this index.html file in the templates folder.  
 
